@@ -300,7 +300,7 @@ Template(GetTable("questionnaire.csv"),
             ,
             fullscreen()
     )
-	 .log( "ProlificID" , ProlificID  )
+	 .log( "ProlificID" , "ProlificID"  )
 	 .log( "Language", "Language" )
 );
 
