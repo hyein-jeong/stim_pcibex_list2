@@ -38,10 +38,10 @@ Sequence("intro_ID",
 	 "consent_form",
 	 "initiate_recorder",
 	 "audio_check",
-	 "questionnaire",	 
-	 
-"instruct_1_1_general",	 	
-"instruct_1_2_general",	 
+	 "questionnaire",
+
+"instruct_1_1_general",
+"instruct_1_2_general",
 "preload_prac_cb",
 "instruct_2_prac_cblock",
 "prac_cb",
@@ -56,26 +56,26 @@ Sequence("intro_ID",
 "instruct_6_ncblock_pretrain",
 "pretrain_ncb",
 "instruct_7_pause_after_ncblock_pretrain",
-"instruct_8_0_train",	 
+"instruct_8_0_train",
 "preload_train1_cb",
 "instruct_8_1_cblock_train1",
 "train1_cb",
 "preload_train1_ncb",
 "instruct_8_1_ncblock_train1",
-"train1_ncb",	 
+"train1_ncb",
 "preload_train2_cb",
 "instruct_8_2_cblock_train2",
-"train2_cb", 
+"train2_cb",
 "preload_train2_ncb",
 "instruct_8_2_ncblock_train2",
 "train2_ncb",
 "instruct_8_2_pause_after_ncblock_train2.png",
 "preload_train3_cb",
 "instruct_8_3_cblock_train3",
-randomize("train3_cb"),	 
+randomize("train3_cb"),
 "preload_train3_ncb",
 "instruct_8_3_ncblock_train3",
-randomize("train3_ncb"),	 
+randomize("train3_ncb"),
 "preload_train4_cb",
 "instruct_8_4_cblock_train4",
 randomize("train4_cb"),
@@ -94,7 +94,7 @@ randomize("train5_ncb"),
 randomize("train6_cb"),
 "preload_train6_ncb",
 "instruct_8_6_ncblock_train6",
-randomize("train6_ncb"),	
+randomize("train6_ncb"),
 "comment",
 "send",
 "final");
@@ -276,7 +276,7 @@ Template(GetTable("questionnaire.csv"),
             .print()
 	,
     	newVar("ProlificID")
-	,       
+	,
         newTextInput("Prolific_ID_input")
             .size(200, 20)
 	    .print()
@@ -288,7 +288,7 @@ Template(GetTable("questionnaire.csv"),
 	,
         newText("line8", qu.line8)
             .after(getTextInput("Prolific_ID_input"))
-            .print()        
+            .print()
    	 ,
         newButton("qu_test_button", "Fortfahren in den Vollbildmodus.")
             .print()
@@ -309,7 +309,7 @@ Template(GetTable("audio_check.csv"),
             .print()
         ,
         newText("line1", ac.line1)
-	     .bold()	
+	     .bold()
 	     .css("background", "white")
         ,
         newText("line2", ac.line2)
@@ -717,12 +717,12 @@ newTrial("instruct_9_3_test_uploading",
         .wait()
 );
 
-////////////////////////////////////  templates for practice trials 
+////////////////////////////////////  templates for practice trials
 
 Template(GetTable("prac_cblock.csv"),
     prac_cb =>
     newTrial("prac_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -762,7 +762,7 @@ Template(GetTable("prac_cblock.csv"),
         .remove()
 	.log()
     )
-    .log( "ProlificID" , getVar("ProlificID") ) 
+    .log( "ProlificID" , getVar("ProlificID") )
     .log( "phrase_item", prac_cb.phrase_item )
     .log( "phrase_practice", prac_cb.phrase_practice)
     .log( "condition_exposure", prac_cb.condition_exposure)
@@ -772,7 +772,7 @@ Template(GetTable("prac_cblock.csv"),
 Template(GetTable("prac_ncblock.csv"),
     prac_ncb =>
     newTrial("prac_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -820,12 +820,12 @@ Template(GetTable("prac_ncblock.csv"),
 );
 
 
-///////////////////// templates for trials during pretrain, train and test session 
+///////////////////// templates for trials during pretrain, train and test session
 
-Template(GetTable("list1_pretrain_cblock.csv"),
+Template(GetTable("list2_pretrain_cblock.csv"),
     pretrain_cb =>
     newTrial("pretrain_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -863,7 +863,7 @@ Template(GetTable("list1_pretrain_cblock.csv"),
     getMediaRecorder("pretrain_recorder")
         .stop()
         .remove()
-	.log()    
+	.log()   
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", pretrain_cb.phrase_item )
@@ -873,10 +873,10 @@ Template(GetTable("list1_pretrain_cblock.csv"),
 );
 
 
-Template(GetTable("list1_pretrain_ncblock.csv"),
+Template(GetTable("list2_pretrain_ncblock.csv"),
     pretrain_ncb =>
     newTrial("pretrain_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -914,7 +914,7 @@ Template(GetTable("list1_pretrain_ncblock.csv"),
     getMediaRecorder("pretrain_recorder")
         .stop()
         .remove()
-	.log()    
+	.log()   
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", pretrain_ncb.phrase_item )
@@ -923,10 +923,10 @@ Template(GetTable("list1_pretrain_ncblock.csv"),
     .log( "condition_phrFreq", pretrain_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train1_cblock.csv"),
+Template(GetTable("list2_train1_cblock.csv"),
     train1_cb =>
     newTrial("train1_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -973,10 +973,10 @@ Template(GetTable("list1_train1_cblock.csv"),
     .log( "condition_phrFreq", train1_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train1_ncblock.csv"),
+Template(GetTable("list2_train1_ncblock.csv"),
     train1_ncb =>
     newTrial("train1_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1024,10 +1024,10 @@ Template(GetTable("list1_train1_ncblock.csv"),
 );
 
 
-Template(GetTable("list1_train2_cblock.csv"),
+Template(GetTable("list2_train2_cblock.csv"),
     train2_cb =>
     newTrial("train2_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1065,7 +1065,7 @@ Template(GetTable("list1_train2_cblock.csv"),
     getMediaRecorder("train2_recorder")
         .stop()
         .remove()
-	.log()    
+	.log()   
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train2_cb.phrase_item)
@@ -1074,10 +1074,10 @@ Template(GetTable("list1_train2_cblock.csv"),
     .log( "condition_phrFreq", train2_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train2_ncblock.csv"),
+Template(GetTable("list2_train2_ncblock.csv"),
     train2_ncb =>
     newTrial("train2_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1115,7 +1115,7 @@ Template(GetTable("list1_train2_ncblock.csv"),
     getMediaRecorder("train2_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train2_ncb.phrase_item )
@@ -1124,10 +1124,10 @@ Template(GetTable("list1_train2_ncblock.csv"),
     .log( "condition_phrFreq", train2_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train3_cblock.csv"),
+Template(GetTable("list2_train3_cblock.csv"),
     train3_cb =>
     newTrial("train3_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1165,7 +1165,7 @@ Template(GetTable("list1_train3_cblock.csv"),
     getMediaRecorder("train3_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train3_cb.phrase_item)
@@ -1174,10 +1174,10 @@ Template(GetTable("list1_train3_cblock.csv"),
     .log( "condition_phrFreq", train3_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train3_ncblock.csv"),
+Template(GetTable("list2_train3_ncblock.csv"),
     train3_ncb =>
     newTrial("train3_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1215,7 +1215,7 @@ Template(GetTable("list1_train3_ncblock.csv"),
     getMediaRecorder("train3_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train3_ncb.phrase_item )
@@ -1224,10 +1224,10 @@ Template(GetTable("list1_train3_ncblock.csv"),
     .log( "condition_phrFreq", train3_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train4_cblock.csv"),
+Template(GetTable("list2_train4_cblock.csv"),
     train4_cb =>
     newTrial("train4_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1265,7 +1265,7 @@ Template(GetTable("list1_train4_cblock.csv"),
     getMediaRecorder("train4_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train4_cb.phrase_item)
@@ -1274,10 +1274,10 @@ Template(GetTable("list1_train4_cblock.csv"),
     .log( "condition_phrFreq", train4_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train4_ncblock.csv"),
+Template(GetTable("list2_train4_ncblock.csv"),
     train4_ncb =>
     newTrial("train4_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1315,7 +1315,7 @@ Template(GetTable("list1_train4_ncblock.csv"),
     getMediaRecorder("train4_recorder")
         .stop()
         .remove()
-	.log()       
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train4_ncb.phrase_item )
@@ -1324,10 +1324,10 @@ Template(GetTable("list1_train4_ncblock.csv"),
     .log( "condition_phrFreq", train4_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train5_cblock.csv"),
+Template(GetTable("list2_train5_cblock.csv"),
     train5_cb =>
     newTrial("train5_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1365,7 +1365,7 @@ Template(GetTable("list1_train5_cblock.csv"),
     getMediaRecorder("train5_recorder")
         .stop()
         .remove()
-	.log()   
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train5_cb.phrase_item)
@@ -1374,10 +1374,10 @@ Template(GetTable("list1_train5_cblock.csv"),
     .log( "condition_phrFreq", train5_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train5_ncblock.csv"),
+Template(GetTable("list2_train5_ncblock.csv"),
     train5_ncb =>
     newTrial("train5_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1415,7 +1415,7 @@ Template(GetTable("list1_train5_ncblock.csv"),
     getMediaRecorder("train5_recorder")
         .stop()
         .remove()
-	.log()   
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train5_ncb.phrase_item )
@@ -1424,10 +1424,10 @@ Template(GetTable("list1_train5_ncblock.csv"),
     .log( "condition_phrFreq", train5_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train6_cblock.csv"),
+Template(GetTable("list2_train6_cblock.csv"),
     train6_cb =>
     newTrial("train6_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1465,7 +1465,7 @@ Template(GetTable("list1_train6_cblock.csv"),
     getMediaRecorder("train6_recorder")
         .stop()
         .remove()
-	.log()   
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train6_cb.phrase_item)
@@ -1474,10 +1474,10 @@ Template(GetTable("list1_train6_cblock.csv"),
     .log( "condition_phrFreq", train6_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train6_ncblock.csv"),
+Template(GetTable("list2_train6_ncblock.csv"),
     train6_ncb =>
     newTrial("train6_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1515,7 +1515,7 @@ Template(GetTable("list1_train6_ncblock.csv"),
     getMediaRecorder("train6_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", train6_ncb.phrase_item )
@@ -1527,10 +1527,10 @@ Template(GetTable("list1_train6_ncblock.csv"),
 
 
 
-Template(GetTable("list1_test_cblock.csv"),
+Template(GetTable("list2_test_cblock.csv"),
     test_cb =>
     newTrial("test_cb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1568,7 +1568,7 @@ Template(GetTable("list1_test_cblock.csv"),
     getMediaRecorder("test_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", test_cb.phrase_item )
@@ -1577,10 +1577,10 @@ Template(GetTable("list1_test_cblock.csv"),
     .log( "condition_phrFreq", test_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_test_ncblock.csv"),
+Template(GetTable("list2_test_ncblock.csv"),
     test_ncb =>
     newTrial("test_ncb",
-    
+   
     newImage("fixation_cross", "fixation.png")
         .size(300, 300)
         .print()
@@ -1618,7 +1618,7 @@ Template(GetTable("list1_test_ncblock.csv"),
     getMediaRecorder("test_recorder")
         .stop()
         .remove()
-	.log()  
+	.log() 
     )
     .log( "sub_id"     , getVar("ID")    )
     .log( "phrase_item", test_ncb.phrase_item )
