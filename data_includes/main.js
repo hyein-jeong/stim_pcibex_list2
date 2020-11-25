@@ -300,8 +300,7 @@ Template(GetTable("questionnaire.csv"),
             ,
             fullscreen()
     )
-	 .log( "ProlificID" , "ProlificID"  )
-	 .log( "Language", "Language" )
+	 .log( "ProlificID" , getVar("ProlificID")  )
 );
 
 
@@ -869,7 +868,7 @@ Template(GetTable("list2_pretrain_cblock.csv"),
 	.log()   
     )
     .log( "sub_id"     , getVar("ID")    )
-    .log( "listnr" , pretrain_cb.list)
+    .log( "listNr" , pretrain_cb.list)
     .log( "phrase_item", pretrain_cb.phrase_item )
     .log( "phrase_pretrain", pretrain_cb.phrase_pretrain)
     .log( "condition_exposure", pretrain_cb.condition_exposure)
@@ -921,8 +920,9 @@ Template(GetTable("list2_pretrain_ncblock.csv"),
 	.log()   
     )
     .log( "sub_id"     , getVar("ID")    )
+    .log( "listNr" , pretrain_ncb.list)
     .log( "phrase_item", pretrain_ncb.phrase_item )
-    .log( "phrase_pretrain", pretrain_ncb.phrase_pretrain)
+    .log( "phrase_pretrain", pretrain_ncb.phrase_pretrain)
     .log( "condition_exposure", pretrain_ncb.condition_exposure)
     .log( "condition_phrFreq", pretrain_ncb.condition_phrFreq)
 );
@@ -1660,7 +1660,7 @@ Template(GetTable("feedback.csv"),
                 .print()
             ,
 	    newTextInput("feedback")
-                .settings.size(400, 10)
+                .settings.size(400, 20)
                 .css("border", "solid 2px grey")
                 .settings.log()
                 .print()
