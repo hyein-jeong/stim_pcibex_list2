@@ -29,7 +29,7 @@ train2,list2,27,Rose_neu,Rose,neu,48,LFP,SN,cblock,nature,Rose_rot,rose_rot.png
 train2,list2,28,Schuh_rot,Schuh,rot,50,HFP,SP,cblock,clothing,Schuh_rot,schuh_rot.png
 train2,list2,29,Tisch_gruen,Tisch,gruen,54,HFP,SP,cblock,furniture,Tisch_gruen,tisch_gruen.png
 train2,list2,30,Topf_schwarz,Topf,schwarz,56,LFP,SP,cblock,tool,Topf_schwarz,topf_schwarz.png
-train2,list2,31,Wolke_rot,Wolke,rot,60,LFP,SN,cblock,nature,Wolke_weiss,Wolke_weiss.png
+train2,list2,31,Wolke_rot,Wolke,rot,60,LFP,SN,cblock,nature,Wolke_weiss,wolke_weiss.png
 train2,list2,32,Zeitung_schwarz,Zeitung,schwarz,62,LFP,SP,cblock,etc,Zeitung_schwarz,zeitung_schwarz.png
 train2,list2,33,Zelt_klein,Zelt,klein,63,HFP,SN,cblock,building,Zelt_schwarz,zelt_schwarz.png
 train2,list2,34,Zweig_weiss,Zweig,weiss,65,LFP,SN,cblock,nature,Zweig_rot,zweig_rot.png
