@@ -29,6 +29,6 @@ train5,list2,27,Schuh_rot,Schuh,rot,50,HFP,SP,cblock,clothing,Schuh_rot,schuh_ro
 train5,list2,28,Tisch_gruen,Tisch,gruen,54,HFP,SP,cblock,furniture,Tisch_gruen,tisch_gruen.png
 train5,list2,29,Topf_schwarz,Topf,schwarz,56,LFP,SP,cblock,tool,Topf_schwarz,topf_schwarz.png
 train5,list2,30,Turm_weiss,Turm,weiss,58,LFP,SN,cblock,building,Turm_rot,turm_rot.png
-train5,list2,31,Wueste_rot,Wueste,rot,61,LFP,SN,cblock,nature,Wueste_weiss,Wueste_weiss.png
+train5,list2,31,Wueste_rot,Wueste,rot,61,LFP,SN,cblock,nature,Wueste_weiss,wueste_weiss.png
 train5,list2,32,Zeitung_schwarz,Zeitung,schwarz,62,LFP,SP,cblock,etc,Zeitung_schwarz,zeitung_schwarz.png
 train5,list2,33,Zug_gross,Zug,gross,64,HFP,SN,cblock,transportation,Zug_rot,zug_rot.png
