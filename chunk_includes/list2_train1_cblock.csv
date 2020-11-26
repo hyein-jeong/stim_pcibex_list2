@@ -28,7 +28,7 @@ train1,list2,26,Rose_neu,Rose,neu,48,LFP,SN,cblock,nature,Rose_gruen,rose_gruen.
 train1,list2,27,Schuh_rot,Schuh,rot,50,HFP,SP,cblock,clothing,Schuh_rot,schuh_rot.png
 train1,list2,28,Tisch_gruen,Tisch,gruen,54,HFP,SP,cblock,furniture,Tisch_gruen,tisch_gruen.png
 train1,list2,29,Topf_schwarz,Topf,schwarz,56,LFP,SP,cblock,tool,Topf_schwarz,topf_schwarz.png
-train1,list2,30,Wueste_rot,Wueste,rot,61,LFP,SN,cblock,nature,Wueste_schwarz,Wueste_schwarz.png
+train1,list2,30,Wueste_rot,Wueste,rot,61,LFP,SN,cblock,nature,Wueste_schwarz,wueste_schwarz.png
 train1,list2,31,Zeitung_schwarz,Zeitung,schwarz,62,LFP,SP,cblock,etc,Zeitung_schwarz,zeitung_schwarz.png
 train1,list2,32,Zelt_klein,Zelt,klein,63,HFP,SN,cblock,building,Zelt_rot,zelt_rot.png
 train1,list2,33,Zug_gross,Zug,gross,64,HFP,SN,cblock,transportation,Zug_weiss,zug_weiss.png
