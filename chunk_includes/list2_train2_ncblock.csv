@@ -28,6 +28,6 @@ train2,list2,60,Tomate_neu,Tomate,neu,55,LFP,SP,ncblock,vegetable,Tomate_neu,tom
 train2,list2,61,Tuer_neu,Tuer,neu,57,HFP,SP,ncblock,building,Tuer_neu,tuer_neu.png
 train2,list2,62,Turm_weiss,Turm,weiss,58,LFP,SN,ncblock,building,Turm_klein,turm_klein.png
 train2,list2,63,Uhr_klein,Uhr,klein,59,LFP,SP,ncblock,tool,Uhr_klein,uhr_klein.png
-train2,list2,64,Wueste_rot,Wueste,rot,61,LFP,SN,ncblock,nature,Wueste_alt,Wueste_alt.png
+train2,list2,64,Wueste_rot,Wueste,rot,61,LFP,SN,ncblock,nature,Wueste_alt,wueste_alt.png
 train2,list2,65,Zug_gross,Zug,gross,64,HFP,SN,ncblock,transportation,Zug_neu,zug_neu.png
 train2,list2,66,Zwiebel_neu,Zwiebel,neu,66,LFP,SP,ncblock,vegetable,Zwiebel_neu,zwiebel_neu.png
