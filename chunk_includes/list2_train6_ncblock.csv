@@ -27,7 +27,7 @@ train6,list2,59,Teppich_klein,Teppich,klein,53,LFP,SP,ncblock,furniture,Teppich_
 train6,list2,60,Tomate_neu,Tomate,neu,55,LFP,SP,ncblock,vegetable,Tomate_neu,tomate_neu.png
 train6,list2,61,Tuer_neu,Tuer,neu,57,HFP,SP,ncblock,building,Tuer_neu,tuer_neu.png
 train6,list2,62,Uhr_klein,Uhr,klein,59,LFP,SP,ncblock,tool,Uhr_klein,uhr_klein.png
-train6,list2,63,Wolke_rot,Wolke,rot,60,LFP,SN,ncblock,nature,Wolke_klein,Wolke_klein.png
-train6,list2,64,Wueste_rot,Wueste,rot,61,LFP,SN,ncblock,nature,Wueste_klein,Wueste_klein.png
+train6,list2,63,Wolke_rot,Wolke,rot,60,LFP,SN,ncblock,nature,Wolke_klein,wolke_klein.png
+train6,list2,64,Wueste_rot,Wueste,rot,61,LFP,SN,ncblock,nature,Wueste_klein,wueste_klein.png
 train6,list2,65,Zweig_weiss,Zweig,weiss,65,LFP,SN,ncblock,nature,Zweig_neu,zweig_neu.png
 train6,list2,66,Zwiebel_neu,Zwiebel,neu,66,LFP,SP,ncblock,vegetable,Zwiebel_neu,zwiebel_neu.png
